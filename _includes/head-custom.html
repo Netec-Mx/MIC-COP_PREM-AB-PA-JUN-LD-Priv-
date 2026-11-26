@@ -1,0 +1,27 @@
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const bloques = [...document.querySelectorAll(".language-mermaid")]
+    .filter((elemento) => !elemento.parentElement.closest(".language-mermaid"));
+
+  for (const bloque of bloques) {
+    const codigo = bloque.matches("code")
+      ? bloque
+      : bloque.querySelector("code");
+
+    if (!codigo) continue;
+
+    const diagrama = document.createElement("div");
+    diagrama.className = "mermaid";
+    diagrama.textContent = codigo.textContent.trim();
+
+    const contenedor = bloque.matches("code")
+      ? bloque.closest("pre")
+      : bloque;
+
+    if (contenedor) contenedor.replaceWith(diagrama);
+  }
+
+  mermaid.initialize({ startOnLoad: false });
+  await mermaid.run({ querySelector: ".mermaid" });
+</script>
