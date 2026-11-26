@@ -53,7 +53,7 @@ El siguiente diagrama muestra cómo fluye la información durante la práctica.
 
 ```mermaid
 flowchart LR
-    A["Cliente envía la solicitud<br/>Microsoft Forms"] --> B{{"Power Automate<br/>desencadenador"}}
+    A["Cliente envía la solicitud<br/>Microsoft Forms"] --> B[["Power Automate<br/>desencadenador"]]
     B --> C["Obtener detalles<br/>de la respuesta"]
     C --> D[("Lista SharePoint<br/>Solicitudes_Mantenimiento")]
     C --> E["Correo al responsable<br/>Outlook"]

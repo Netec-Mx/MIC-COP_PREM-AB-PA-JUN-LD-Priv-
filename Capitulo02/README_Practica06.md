@@ -55,7 +55,7 @@ Comunicaciones que se preparan en la práctica:
 flowchart TD
     I["Iniciativa de mejora"] --> C1["Correo a responsables<br/>de área"]
     C1 --> C2["Versión para<br/>Dirección"]
-    C1 --> K{{"Coaching<br/>de Copilot"}}
+    C1 --> K[["Coaching<br/>de Copilot"]]
     I --> C3["Convocatoria<br/>a reunión"]
     C3 --> C4["Correo de<br/>seguimiento"]
     style K fill:#e8f0fe,stroke:#1f4e79
