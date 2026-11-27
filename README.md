@@ -10,15 +10,6 @@ Te damos la bienvenida a la **plataforma de laboratorios** del curso **Transform
 
 Las prácticas utilizan un escenario empresarial ficticio de soluciones intralogísticas y se realizan en Microsoft 365 Copilot Premium, Word, Excel, PowerPoint, Outlook, Teams, Power Automate y Agent Builder. Antes de comenzar, revisa la [Guía de configuración del entorno](Setup_Guide.md).
 
-```mermaid
-flowchart LR
-    M1["Módulo 1<br/>Prompt Engineering"] --> M2["Módulo 2<br/>Copilot en M365"]
-    M2 --> M3["Módulo 3<br/>Datos en Excel"]
-    M3 --> M4["Módulo 4<br/>Power Automate"]
-    M4 --> M5["Módulo 5<br/>Agent Builder"]
-    M5 --> M6["Módulo 6<br/>Caso integrado"]
-    style M6 fill:#fff4ce,stroke:#b08900
-```
 
 ## Lista de laboratorios
 
